@@ -1,6 +1,6 @@
-using JuliaProject
+using SafeTestsets
 using Test
 
 @testset "JuliaProject.jl" begin
-    # Write your tests here.
+    @time @safetestset "Doubling" begin include("doubling.jl") end
 end

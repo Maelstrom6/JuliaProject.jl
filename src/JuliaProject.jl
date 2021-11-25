@@ -1,5 +1,5 @@
 module JuliaProject
 
-# Write your package code here.
+include("doubler.jl")
 
 end
